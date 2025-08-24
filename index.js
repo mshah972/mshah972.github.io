@@ -1,3 +1,19 @@
+tailwind.config = {
+    theme: {
+        extend: {
+            fontFamily: {
+                'funnel': ['Funnel Sans', 'sans-serif']
+            },
+            colors: {
+                'accent': '#808080',
+                'accent-dark': '#333333',
+            }
+        }
+    }
+}
+
+
+
 const form = document.getElementById('contactForm');
 const statusEl = document.getElementById('formStatus');
 
@@ -37,8 +53,7 @@ function updateClock() {
     const formattedHours = hours % 12 || 12;
     const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
     const formattedSeconds = now.getSeconds() < 10 ? `0${now.getSeconds()}` : now.getSeconds();
-    const formattedTime = `${formattedHours}:${formattedMinutes}:${formattedSeconds} ${period}`;
-    cstClock.textContent = formattedTime;
+    cstClock.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds} ${period}`;
     setTimeout(updateClock, 1000);
 }
 
