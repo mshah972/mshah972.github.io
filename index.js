@@ -1,19 +1,3 @@
-tailwind.config = {
-    theme: {
-        extend: {
-            fontFamily: {
-                'funnel': ['Funnel Sans', 'sans-serif']
-            },
-            colors: {
-                'accent': '#808080',
-                'accent-dark': '#333333',
-            }
-        }
-    }
-}
-
-
-
 const form = document.getElementById('contactForm');
 const statusEl = document.getElementById('formStatus');
 
