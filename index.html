@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moksh Shah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'funnel': ['Funnel Sans', 'sans-serif']
+                    },
+                    colors: {
+                        'accent': '#808080',
+                        'accent-dark': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="index.js" defer></script>
+</head>
+<body class="bg-white font-funnel uppercase max-w-7xl mx-auto">
+<!-- Header -->
+<header class="fixed w-full z-10 bg-white max-w-7xl mx-auto">
+    <nav class="flex justify-between mx-auto px-4 py-4 text-md text-black font-light tracking-tight border-b border-black">
+        <div class="flex flex-row items-center justify-end relative">
+            <a href="#" class="hover:underline pr-4">
+                SHAH
+            </a>
+            <span class="absolute center flex h-2 w-2">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-600 opacity-75"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-yellow-400"></span>
+                </span>
+        </div>
+        <ul class="flex space-x-4">
+            <li class="hover:underline">
+                <a href="#about-section">ABOUT</a>
+            </li>
+            <li class="hover:underline">
+                <a href="#experience-section">WORKS</a>
+            </li>
+            <li class="hover:underline">
+                <a href="#contact-section">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="mx-auto pt-16">
+    <!-- Hero Section -->
+    <section class="px-6 md:px-6 lg:px-10 pt-6 pb-12">
+        <!-- Name -->
+        <div class="flex flex-col justify-between items-start max-w-2xl">
+            <h1 class="leading-none tracking-tight text-black max-w-2xl">
+                <span class="block text-[16vw] sm:text-[13vw] lg:text-[11vw]">MOKSH</span>
+                <span class="block -mt-2 text-[16vw] sm:text-[13vw] lg:text-[11vw]">SHAH</span>
+            </h1>
+            <a href="https://www.depaul.edu/Pages/default.aspx" class="inline-block mt-6 text-base md:text-lg font-light tracking-tight text-accent hover:underline hover:text-accent-dark cursor-pointer transition-colors duration-300">
+                I AM A COMPUTER SCIENCE STUDENT AT THE DEPAUL UNIVERSITY.
+            </a>
+        </div>
+
+        <!-- Info + links grid -->
+        <div class="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-8">
+            <!-- 1 -->
+            <div class="w-full">
+                <div class="border-b border-black pb-3">
+                    <p class="text-[12px] md:text-[13px] font-light tracking-tight text-accent">SPECIALTY:</p>
+                    <p class="text-[15px] md:text-[16px] font-light tracking-tight text-black">WEB DEVELOPER</p>
+                </div>
+                <a href="#about-section" class="group flex items-center justify-between mt-4 pb-3 hover:underline cursor-pointer">
+                    <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">ABOUT</span>
+                    <img src="assets/linkArrow.svg" alt="" class="w-4 group-hover:translate-x-0.5 transition-transform">
+                </a>
+            </div>
+
+            <!-- 2 -->
+            <div class="w-full">
+                <div class="border-b border-black pb-3">
+                    <p class="text-[12px] md:text-[13px] font-light tracking-tight text-accent">AVAILABILITY:</p>
+                    <p class="text-[15px] md:text-[16px] font-light tracking-tight text-black">OPEN FOR WORK</p>
+                </div>
+                <a href="#contact-section" class="group flex items-center justify-between mt-4 pb-3 hover:underline cursor-pointer">
+                    <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">CONTACT</span>
+                    <img src="assets/linkArrow.svg" alt="" class="w-4 group-hover:translate-x-0.5 transition-transform">
+                </a>
+            </div>
+
+            <!-- 3 -->
+            <div class="w-full">
+                <div class="border-b border-black pb-3">
+                    <p class="text-[12px] md:text-[13px] font-light tracking-tight text-accent">EXPERIENCE:</p>
+                    <p class="text-[15px] md:text-[16px] font-light tracking-tight text-black">3+ YEARS</p>
+                </div>
+                <a href="#experience-section" class="group flex items-center justify-between mt-4 pb-3 hover:underline cursor-pointer">
+                    <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">WORKS</span>
+                    <img src="assets/linkArrow.svg" alt="" class="w-4 group-hover:translate-x-0.5 transition-transform">
+                </a>
+            </div>
+
+            <!-- 4 -->
+            <div class="w-full">
+                <div class="border-b border-black pb-3">
+                    <p class="text-[12px] md:text-[13px] font-light tracking-tight text-accent">BASED IN:</p>
+                    <p class="text-[15px] md:text-[16px] font-light tracking-tight text-black">CHICAGO, IL</p>
+                </div>
+                <a href="#contact-section" class="group flex items-center justify-between mt-4 pb-3 hover:underline cursor-pointer">
+                    <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">CONTACT</span>
+                    <img src="assets/linkArrow.svg" alt="" class="w-4 group-hover:translate-x-0.5 transition-transform">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="px-6 md:px-6 lg:px-10 pt-6 pb-12 max-w-7xl mx-auto">
+        <img src="assets/example.jpg" alt="" class="w-full rounded-3xl">
+        <div class="mt-4 mr-6 flex justify-start">
+            <p class="text-[12px] md:text-[13px] font-light tracking-tight text-accent">(FYI: This is a Stock Photo)</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="px-6 md:px-6 lg:px-10 pt-6 pb-16 flex w-full items-start justify-between gap-6 flex-col lg:flex-row">
+        <div class="flex flex-col items-start max-w-xl">
+            <h2 class="text-[20px] md:text-[24px] font-light tracking-tight text-black">ABOUT ME</h2>
+            <p class="text-[16px] md:text-[20px] font-light tracking-tight text-accent leading-relaxed mt-4">
+                I’M PASSIONATE ABOUT SOFTWARE ENGINEERING AND LOVE FINDING INNOVATIVE WAYS TO SOLVE PROBLEMS.
+                I’VE WORKED ON A LOT OF FRONTEND DEVELOPMENT IN SOME MY PROJECTS INCLUDING AI-POWERED TRAVEL PLANNING APPLICATIONS AND RIDE-BOOKING PLATFORMS, GIVING ME HANDS-ON EXPERIENCE IN FRONT-END DEVELOPMENT.
+                I ENJOY WORKING WITH GITHUB AND GIT TO MANAGE CODE EFFICIENTLY AND COLLABORATE SEAMLESSLY WITH OTHERS.
+            </p>
+        </div>
+
+        <div class="mt-8 lg:mt-12 w-full flex flex-col items-end">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
+                <a href="https://www.linkedin.com/in/moksh-shah07" class="group flex flex-col justify-between border border-black p-6 w-full aspect-square hover:shadow-lg transition">
+                    <div class="flex-1 flex items-center justify-center border-b border-black pb-5">
+                        <svg class="w-10 h-10" viewBox="0 0 32 32" aria-hidden="true"><path d="M32 31.292V19.46c0-6.34-3.384-9.29-7.896-9.29-3.641 0-5.273 2.003-6.182 3.409v-2.924h-6.86c.091 1.937 0 20.637 0 20.637h6.86V19.767c0-.615.044-1.232.226-1.672.495-1.233 1.624-2.509 3.518-2.509 2.483 0 3.475 1.892 3.475 4.666v11.041H32zM3.835 7.838c2.391 0 3.882-1.586 3.882-3.567C7.673 2.247 6.227.707 3.881.707S0 2.246 0 4.271c0 1.981 1.489 3.567 3.792 3.567h.043zm3.43 23.454V10.655H.406v20.637h6.859z"/></svg>
+                    </div>
+                    <div class="flex items-center justify-between pt-4">
+                        <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">LINKEDLN</span>
+                        <img src="assets/linkArrow.svg" alt="" class="w-4">
+                    </div>
+                </a>
+
+                <a href="https://github.com/mshah972" class="group flex flex-col justify-between border border-black p-6 w-full aspect-square hover:shadow-lg transition">
+                    <div class="flex-1 flex items-center justify-center border-b border-black pb-5">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.39-3.87-1.39-.53-1.36-1.3-1.73-1.3-1.73-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.2-3.08-.12-.3-.52-1.53.11-3.19 0 0 .97-.31 3.18 1.18a11.02 11.02 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.66.23 2.89.11 3.19.75.8 1.2 1.82 1.2 3.08 0 4.41-2.69 5.39-5.25 5.68.42.36.8 1.07.8 2.17v3.22c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                    </div>
+                    <div class="flex items-center justify-between pt-4">
+                        <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">GITHUB</span>
+                        <img src="assets/linkArrow.svg" alt="" class="w-4">
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/smoksh97" class="group flex flex-col justify-between border border-black p-6 w-full aspect-square hover:shadow-lg transition">
+                    <div class="flex-1 flex items-center justify-center border-b border-black pb-5">
+                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center justify-between pt-4">
+                        <span class="text-[15px] md:text-[16px] font-light tracking-tight text-black">INSTAGRAM</span>
+                        <img src="assets/linkArrow.svg" alt="" class="w-4">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-24 sm:py-32 border-t border-b border-black">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base text-accent font-light tracking-normal">REAL-WORLD APPS BUILT WITH MODERN FRAMEWORKS</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">5+ PROJECTS</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base text-accent font-light tracking-normal">RECOGNIZED FOR INNOVATION AND IMPACT</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">2+ AWARDS</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base text-accent font-light tracking-normal">COLLABORATED WITH STARTUPS AND INDIVIDUALS</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-black sm:text-5xl">2+ CLIENTS</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="px-6 md:px-6 lg:px-10 pt-12 pb-12">
+        <h2 class="text-3xl tracking-tight text-black sm:text-4xl lg:text-6xl">SKILLS</h2>
+        <p class="mt-4 text-accent font-light">
+            Designing and developing seamless digital experiences with modern tools and technologies.
+        </p>
+        <div class="mt-8 w-full flex flex-wrap justify-start items-center font-light tracking-tight text-xl">
+            <div class="rounded-full border border-black p-4 text-center m-2">
+                UI DESIGN
+            </div>
+            <div class="rounded-full border border-black p-4 m-2">
+                UX DESIGN
+            </div>
+            <div class="rounded-full border border-black p-4 m-2">
+                FRONT-END DEVELOPMENT
+            </div>
+            <div class="rounded-full border border-black p-4 m-2">
+                iOS MOBILE DEVELOPMENT
+            </div>
+            <div class="rounded-full border border-black p-4 m-2">
+                ANDROID MOBILE DEVELOPMENT
+            </div>
+        </div>
+        <div class="bg-white py-8 sm:py-20">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-center gap-x-12">
+                <div class="flex justify-center">
+                    <p class="relative rounded-full px-4 py-1.5 text-sm tracking-tight text-black border border-black shadow-md hidden md:inline">
+                        <span class="">Building reliable solutions with the technologies that power today’s digital world.</span>
+                    </p>
+                </div>
+                <div class="mt-8 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
+                    <div class="flex flex-col bg-gray-400/5 p-8 sm:p-10 items-center justify-center">
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                            <path d="M 28.1875 0 C 30.9375 6.363281 18.328125 10.292969 17.15625 15.59375 C 16.082031 20.464844 24.648438 26.125 24.65625 26.125 C 23.355469 24.109375 22.398438 22.449219 21.09375 19.3125 C 18.886719 14.007813 34.535156 9.207031 28.1875 0 Z M 36.5625 8.8125 C 36.5625 8.8125 25.5 9.523438 24.9375 16.59375 C 24.6875 19.742188 27.847656 21.398438 27.9375 23.6875 C 28.011719 25.558594 26.0625 27.125 26.0625 27.125 C 26.0625 27.125 29.609375 26.449219 30.71875 23.59375 C 31.949219 20.425781 28.320313 18.285156 28.6875 15.75 C 29.039063 13.324219 36.5625 8.8125 36.5625 8.8125 Z M 19.1875 25.15625 C 19.1875 25.15625 9.0625 25.011719 9.0625 27.875 C 9.0625 30.867188 22.316406 31.089844 31.78125 29.25 C 31.78125 29.25 34.296875 27.519531 34.96875 26.875 C 28.765625 28.140625 14.625 28.28125 14.625 27.1875 C 14.625 26.179688 19.1875 25.15625 19.1875 25.15625 Z M 38.65625 25.15625 C 37.664063 25.234375 36.59375 25.617188 35.625 26.3125 C 37.90625 25.820313 39.84375 27.234375 39.84375 28.84375 C 39.84375 32.46875 34.59375 35.875 34.59375 35.875 C 34.59375 35.875 42.71875 34.953125 42.71875 29 C 42.71875 26.296875 40.839844 24.984375 38.65625 25.15625 Z M 16.75 30.71875 C 15.195313 30.71875 12.875 31.9375 12.875 33.09375 C 12.875 35.417969 24.5625 37.207031 33.21875 33.8125 L 30.21875 31.96875 C 24.351563 33.847656 13.546875 33.234375 16.75 30.71875 Z M 18.1875 35.9375 C 16.058594 35.9375 14.65625 37.222656 14.65625 38.1875 C 14.65625 41.171875 27.371094 41.472656 32.40625 38.4375 L 29.21875 36.40625 C 25.457031 37.996094 16.015625 38.238281 18.1875 35.9375 Z M 11.09375 38.625 C 7.625 38.554688 5.375 40.113281 5.375 41.40625 C 5.375 48.28125 40.875 47.964844 40.875 40.9375 C 40.875 39.769531 39.527344 39.203125 39.03125 38.9375 C 41.933594 45.65625 9.96875 45.121094 9.96875 41.15625 C 9.96875 40.253906 12.320313 39.390625 14.5 39.8125 L 12.65625 38.75 C 12.113281 38.667969 11.589844 38.636719 11.09375 38.625 Z M 44.625 43.25 C 39.226563 48.367188 25.546875 50.222656 11.78125 47.0625 C 25.542969 52.695313 44.558594 49.535156 44.625 43.25 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col bg-gray-400/5 p-8 sm:p-10 items-center justify-center">
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                            <path d="M 43.910156 12.003906 L 27.070313 2.539063 C 25.792969 1.824219 24.207031 1.824219 22.929688 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.929688 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.070313 47.460938 L 43.910156 37.996094 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 Z M 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 C 28.78125 13 32.273438 14.753906 34.542969 17.742188 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.257813 C 32.273438 35.246094 28.78125 37 25 37 Z M 37 26 L 35 26 L 35 28 L 33 28 L 33 26 L 31 26 L 31 24 L 33 24 L 33 22 L 35 22 L 35 24 L 37 24 Z M 44 26 L 42 26 L 42 28 L 40 28 L 40 26 L 38 26 L 38 24 L 40 24 L 40 22 L 42 22 L 42 24 L 44 24 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col bg-gray-400/5 p-8 sm:p-10 items-center justify-center">
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                            <path d="M 45.273438 2.324219 C 45.085938 2.117188 44.816406 2 44.535156 2 L 5.464844 2 C 5.183594 2 4.914063 2.117188 4.726563 2.324219 C 4.535156 2.53125 4.441406 2.808594 4.46875 3.089844 L 7.988281 42.515625 C 8.023438 42.929688 8.3125 43.273438 8.710938 43.390625 L 24.722656 47.960938 C 24.808594 47.988281 24.902344 48 24.996094 48 C 25.089844 48 25.179688 47.988281 25.269531 47.960938 L 41.292969 43.390625 C 41.691406 43.273438 41.976563 42.929688 42.015625 42.515625 L 45.53125 3.089844 C 45.558594 2.808594 45.464844 2.53125 45.273438 2.324219 Z M 36.847656 15.917969 L 18.035156 15.917969 L 18.484375 21.007813 L 36.394531 21.007813 L 35.050781 36.050781 L 24.992188 39.089844 L 24.894531 39.058594 L 14.953125 36.046875 L 14.410156 29.917969 L 19.28125 29.917969 L 19.492188 32.296875 L 25.050781 33.460938 L 30.507813 32.296875 L 31.089844 25.859375 L 14.046875 25.859375 L 12.722656 11.054688 L 37.28125 11.054688 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col bg-gray-400/5 p-8 sm:p-10 items-center justify-center">
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                            <path d="M35.5,3h-21C8.159,3,3,8.159,3,14.5v21C3,41.841,8.159,47,14.5,47h21C41.841,47,47,41.841,47,35.5v-21 C47,8.159,41.841,3,35.5,3z M39.615,39c0,0-1.65-2.807-4.416-2.807c-2.666,0-4.707,2.807-10.074,2.807 c-9.975-0.001-15.629-7.398-17.093-9.7c-0.115-0.181,0.1-0.381,0.281-0.266C12.555,31.701,16.658,33,19.5,32.999 C23.657,32.998,26,31,26,31c-3.829-2.255-13-12.75-14.954-15.681c-0.135-0.202,0.107-0.425,0.293-0.269 c7.947,6.684,12.476,9.203,12.476,9.203c-1.682-1.412-6.69-8.004-8.773-10.935c-0.141-0.198,0.118-0.427,0.296-0.262 C21.038,18.356,31,26,31,26c0.627-1.764,1.024-3.881,0.998-5.5c-0.067-4.269-2.82-8.526-3.961-10.191 c-0.129-0.188,0.106-0.399,0.291-0.266c7.422,5.332,9.673,11.99,9.672,15.832c-0.001,2.76-1,4.5-1,4.5S41.232,34.992,39.615,39z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col bg-gray-400/5 p-8 sm:p-10 items-center justify-center">
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                            <path d="M 46.792969 22.089844 L 27.910156 3.207031 C 27.109375 2.402344 26.054688 2 25 2 C 23.945313 2 22.890625 2.402344 22.089844 3.207031 L 18.355469 6.941406 L 22.976563 11.5625 C 24.511719 10.660156 26.511719 10.855469 27.828125 12.171875 C 29.144531 13.488281 29.335938 15.488281 28.433594 17.019531 L 32.976563 21.5625 C 34.511719 20.660156 36.511719 20.855469 37.828125 22.171875 C 39.390625 23.734375 39.390625 26.265625 37.828125 27.828125 C 36.265625 29.390625 33.734375 29.390625 32.171875 27.828125 C 30.855469 26.511719 30.660156 24.511719 31.5625 22.976563 L 27.019531 18.433594 C 26.695313 18.625 26.355469 18.765625 26 18.855469 L 26 31.140625 C 27.722656 31.585938 29 33.136719 29 35 C 29 37.210938 27.210938 39 25 39 C 22.789063 39 21 37.210938 21 35 C 21 33.136719 22.277344 31.585938 24 31.140625 L 24 18.855469 C 23.332031 18.683594 22.695313 18.351563 22.171875 17.828125 C 20.855469 16.511719 20.664063 14.511719 21.566406 12.980469 L 16.941406 8.355469 L 3.207031 22.089844 C 1.597656 23.695313 1.597656 26.304688 3.207031 27.910156 L 22.089844 46.792969 C 22.890625 47.597656 23.945313 48 25 48 C 26.054688 48 27.109375 47.597656 27.910156 46.792969 L 46.792969 27.910156 C 48.402344 26.304688 48.402344 23.695313 46.792969 22.089844 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col bg-gray-400/5 p-8 sm:p-10 items-center justify-center">
+                        <svg class="w-16 h-16" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0,0,256,256">
+                            <g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,9.604c-6.4,0 -10.4,3.199 -12,9.597c2.4,-3.199 5.2,-4.398 8.4,-3.599c1.826,0.456 3.131,1.781 4.576,3.247c2.352,2.387 5.075,5.151 11.024,5.151c6.4,0 10.4,-3.199 12,-9.598c-2.4,3.199 -5.2,4.399 -8.4,3.6c-1.825,-0.456 -3.13,-1.781 -4.575,-3.247c-2.353,-2.388 -5.077,-5.151 -11.025,-5.151zM12,24c-6.4,0 -10.4,3.199 -12,9.598c2.4,-3.199 5.2,-4.399 8.4,-3.599c1.825,0.457 3.13,1.781 4.575,3.246c2.353,2.388 5.077,5.152 11.025,5.152c6.4,0 10.4,-3.199 12,-9.598c-2.4,3.199 -5.2,4.399 -8.4,3.599c-1.826,-0.456 -3.131,-1.781 -4.576,-3.246c-2.352,-2.388 -5.075,-5.152 -11.024,-5.152z"></path></g></g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project-section" class="px-6 lg:px-10 pt-[10vh] pb-12">
+        <div class="flex flex-col items-start justify-start">
+            <h2 class="text-7xl tracking-tight text-black">PROJECTS</h2>
+            <p class="mt-4 text-accent font-light">
+                A selection of projects that showcase my skills in building clean, scalable, and impactful applications.
+            </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="group rounded-[18px] border border-black overflow-hidden hover:shadow-md transition cursor-pointer">
+                <div class="relative flex overflow-hidden h-64 p-4 items-center justify-center bg-[#F3EBDE]">
+                    <img src="assets/localSphere_logo.svg" alt="" class="w-64 h-fit object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl md:text-2xl tracking-tight">LocalSphere</h3>
+                    <p class="mt-2 text-accent text-sm">
+                        Personalized itineraries with LLM prompts, live maps, and booking hooks.
+                    </p>
+
+                    <!-- Tech pills -->
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full border border-black text-xs">Tailwind</span>
+                        <span class="px-3 py-1 rounded-full border border-black text-xs">Django</span>
+                        <span class="px-3 py-1 rounded-full border border-black text-xs">OpenAI</span>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="mt-6 flex items-center gap-6">
+                        <a href="https://github.com/mshah972/Local-Sphere.git" class="inline-flex items-center gap-1 text-sm hover:underline">
+                            Live Demo
+                            <img src="assets/linkArrow.svg" alt="" class="w-3">
+                        </a>
+                        <a href="https://github.com/mshah972/Local-Sphere.git" class="inline-flex items-center gap-1 text-sm text-muted hover:underline">
+                            GitHub
+                            <img src="assets/linkArrow.svg" alt="" class="w-3">
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="group rounded-[18px] border border-black overflow-hidden hover:shadow-md transition cursor-pointer">
+                <div class="relative flex overflow-hidden h-64 p-4 items-center justify-center bg-[#FAFAFA]">
+                    <img src="assets/ShelfLife_Logo.svg" alt="" class="w-24 h-fit object-cover transition-transform duration-500 group-hover:scale-[1.02]">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl md:text-2xl tracking-tight">ShelfLife</h3>
+                    <p class="mt-2 text-accent text-sm">
+                        Peer-to-peer marketplace to buy & resell books with instant ISBN lookup, smart pricing, and safe checkout.
+                    </p>
+
+                    <!-- Tech pills -->
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full border border-black text-xs">Tailwind</span>
+                        <span class="px-3 py-1 rounded-full border border-black text-xs">Firebase</span>
+                        <span class="px-3 py-1 rounded-full border border-black text-xs">Gemini</span>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="mt-6 flex items-center gap-6 text-black">
+                        <a href="./ShelfLife.html" class="inline-flex items-center gap-1 text-sm hover:underline">
+                            Case Study
+                            <img src="assets/linkArrow.svg" alt="" class="w-3">
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience-section" class="px-6 lg:px-10 py-20">
+        <!-- Header -->
+        <div class="max-w-3xl">
+            <p class="text-sm tracking-widest text-black">Work</p>
+            <h2 class="mt-2 text-[12vw] sm:text-6xl lg:text-7xl leading-none tracking-tight">
+                Experience
+            </h2>
+            <p class="mt-4 text-[15px] md:text-base text-accent font-light">
+                A snapshot of roles, programs, and leadership that shaped how I build software.
+            </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-10">
+            <div class="lg:col-span-2">
+                <aside>
+                    <div class="rounded-[12px] border border-black p-6">
+                        <h3 class="text-xl tracking-tight font-semibold">What I bring</h3>
+                        <ul class="mt-3 space-y-4 text-sm text-black">
+                            <li><span class="font-medium">• Full-stack development:</span> Tailwind, Python/Django</li>
+                            <li><span class="font-medium">• Software development:</span> Swift, Java, C++</li>
+                            <li><span class="font-medium">• AI features:</span> prompt design, API integration, UX for AI</li>
+                            <li><span class="font-medium">• Product mindset:</span> scoping, fast iteration, ship quality</li>
+                        </ul>
+
+                        <a href="./assets/Moksh%20Shah_Resume.pdf" target="_blank"
+                           class="mt-6 inline-flex items-center gap-2 rounded-full border border-black px-5 py-2 text-sm hover:bg-gray-300 transition">
+                            Download resume
+                            <img src="assets/linkArrow.svg" alt="" class="w-3">
+                        </a>
+                    </div>
+                </aside>
+                <aside class="mt-12">
+                    <div class="rounded-[12px] border border-black p-6">
+                        <h3 class="text-xl tracking-tight font-semibold">Certificates</h3>
+                        <ul class="mt-3 space-y-4 text-sm text-black">
+                            <li><span class="font-normal">• Version Control: </span><a href="https://coursera.org/share/42d61799e1719026fcaf5617e61b5d4e" class="text-black font-medium hover:underline">Coursera</a></li>
+                            <li><span class="font-normal">• Career Discovery Program: </span><a href="https://brasilopenbadge.com.br/pages/badge/f09055574098d6b5bfb455004b7215bb" class="text-black font-medium hover:underline">Expedia Group</a></li>
+                            <li><span class="font-normal">• Git & GitHub: </span><a href="https://www.linkedin.com/learning/certificates/57c9560e32d6c2e049aa1bc1287109e2dbf8306cafa5e84286c8cbb7364b21f4?accountId=2228698&u=2228698&success=true&authUUID=G1QzQ6/8RfKfb8ndv+P4Ng%3D%3D" class="text-black font-medium hover:underline">LinkedLn</a></li>
+                            <li><span class="font-normal">• Introduction to Front-End Development: </span><a href="https://coursera.org/share/ef6b8918ca4f0270761fa8889dc11793" class="text-black font-medium hover:underline">Coursera</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="lg:col-span-3 space-y-4">
+                <article class="border border-black p-6">
+                    <header class="flex flex-wrap items-end justify-between gap-2">
+                        <div>
+                            <h3 class="text-xl tracking-tight">Project Lead & Lead Developer</h3>
+                            <p class="text-sm text-accent">Local Sphere • Chicago, IL</p>
+                        </div>
+                        <span class="text-xs tracking-widest text-accent-dark">2025</span>
+                    </header>
+
+                    <ul class="mt-4 space-y-2 text-[15px]">
+                        <li>• Built an AI-powered itinerary generator with real-time data hooks.</li>
+                        <li>• Designed clean UI with Tailwind; implemented auth, state, and API layer.</li>
+                        <li>• Wrote prompt pipelines and evaluation to improve recommendation quality.</li>
+                    </ul>
+
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1 rounded-full border border-accent">Tailwind</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Django</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">OpenAI API</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Google API</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Mapbox API</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Yelp API</span>
+                    </div>
+                </article>
+
+                <article class="border border-black p-6">
+                    <header class="flex flex-wrap items-end justify-between gap-2">
+                        <div>
+                            <h3 class="text-xl tracking-tight">Early Career Development Program</h3>
+                            <p class="text-sm text-accent">Expedia Group • Remote & Chicago</p>
+                        </div>
+                        <span class="text-xs tracking-widest text-accent-dark">2023</span>
+                    </header>
+
+                    <ul class="mt-4 space-y-2 text-[15px]">
+                        <li>• Explored large-scale systems, experimentation, and product analytics.</li>
+                        <li>• Completed technical workshops and shipped a capstone prototype.</li>
+                        <li>• Practiced code reviews, collaboration, and professional communication.</li>
+                    </ul>
+
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1 rounded-full border border-accent">Program</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Mentorship</span>
+                    </div>
+                </article>
+
+                <article class="border border-black p-6">
+                    <header class="flex flex-wrap items-end justify-between gap-2">
+                        <div>
+                            <h3 class="text-xl tracking-tight">Founder</h3>
+                            <p class="text-sm text-accent">Revamp Technologies • Chicago, IL</p>
+                        </div>
+                        <span class="text-xs tracking-widest text-accent-dark">2023 — 2024</span>
+                    </header>
+
+                    <ul class="mt-4 space-y-2 text-[15px]">
+                        <li>• Led development, branding, and operations for a tech venture.</li>
+                        <li>• Built ecommerce websites for small local businesses using Shopify.</li>
+                        <li>• Managed partnerships and executed growth experiments.</li>
+                    </ul>
+
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1 rounded-full border border-accent">Leadership</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Analytics</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">No-Code Platforms</span>
+                    </div>
+                </article>
+
+                <article class="border border-black p-6">
+                    <header class="flex flex-wrap items-end justify-between gap-2">
+                        <div>
+                            <h3 class="text-xl tracking-tight">Student</h3>
+                            <p class="text-sm text-accent">DePaul University • Chicago, IL</p>
+                        </div>
+                        <span class="text-xs tracking-widest text-accent-dark">2023 — Present</span>
+                    </header>
+
+                    <ul class="mt-4 space-y-2 text-[15px]">
+                        <li>• Built course projects across data structures, OOP, and distributed systems.</li>
+                        <li>• Collaborated in teams, using Git/GitHub flows and code reviews.</li>
+                        <li>• Presented technical work to peers and mentors for feedback.</li>
+                    </ul>
+
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1 rounded-full border border-accent">Java</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">C++</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Git & GitHub</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Django</span>
+                        <span class="px-3 py-1 rounded-full border border-accent">Tailwind</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="px-6 lg:px-10 py-20 flex flex-col">
+        <!-- Header -->
+        <div class="max-w-3xl">
+            <p class="text-sm tracking-widest text-muted">LET’S TALK</p>
+            <h2 class="mt-2 text-[12vw] sm:text-6xl lg:text-7xl leading-none tracking-tight">Contact</h2>
+            <p class="mt-4 text-[15px] md:text-base text-muted">
+                Have a project, internship, or collaboration in mind? Send a message—I'll reply soon.
+            </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-10">
+            <!-- Left: details -->
+            <aside class="lg:col-span-2">
+                <div class="rounded-[12px] border border-black p-6">
+                    <h3 class="text-xl tracking-tight">Get in touch</h3>
+                    <p class="mt-2 text-ink text-sm">
+                        Prefer email? Reach me directly at
+                    </p>
+                    <a href="mailto:moksh.j.sha@gmail.com" class="underline text-sm">moksh.j.sha@gmail.com</a>.
+                    <div class="mt-6 space-y-3 text-sm">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="location" version="1.1" viewBox="0 0 100 100">
+                                  <defs>
+                                    <path id="SVGID_1_" d="M0 0h100v100H0z"></path>
+                                  </defs>
+                                <path d="M79.535 27.4c-.32-1.201-.971-2.48-1.452-3.6C72.324 9.96 59.741 5 49.581 5 35.98 5 21 14.12 19 32.919v3.841c0 .16.055 1.6.134 2.32 1.121 8.959 8.19 18.48 13.47 27.439 5.68 9.599 11.574 19.041 17.415 28.479 3.6-6.159 7.188-12.399 10.707-18.399.959-1.761 2.071-3.521 3.031-5.201.64-1.119 1.862-2.238 2.421-3.279C71.857 57.722 81 47.24 81 36.92v-4.24c0-1.119-1.387-5.039-1.465-5.28M49.83 46.68c-3.998 0-8.374-1.999-10.534-7.52-.322-.879-.296-2.64-.296-2.801v-2.48c0-7.038 5.976-10.239 11.175-10.239 6.4 0 11.351 5.121 11.351 11.521S56.23 46.68 49.83 46.68"></path>
+                                </svg>
+                            <span>Chicago, IL • CST - <span id="cst-clock" class="font-medium">--:--</span></span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 28 27.311" viewBox="0 0 28 27.311" id="github-logo">
+                                <path d="M28,14c0-7.732-6.268-14-14-14S0,6.268,0,14c0,6.221,4.061,11.488,9.674,13.311c0.767-0.235,0.803-0.702,0.803-0.702s0-1.383,0-2.661c-0.843,0.155-1.89,0.157-2.271,0.157c-0.464,0-2.009-0.386-2.689-2.132c-0.68-1.746-1.947-1.916-1.947-2.225s0.278-0.371,0.278-0.371s0.17,0,0.927,0c0.757,0,1.514,1.267,2.04,2.04s1.792,0.927,2.411,0.927c0.347,0,0.885-0.175,1.294-0.329c0.167-1.082,0.792-1.896,0.792-1.896c-6.243-0.556-6.397-5.223-6.397-7.046c0-1.823,1.484-3.616,1.484-3.616s-0.719-2.04,0.185-3.709c1.947,0.015,3.894,1.483,3.894,1.483S12.238,6.676,14,6.676s3.523,0.556,3.523,0.556s1.947-1.468,3.894-1.483c0.904,1.669,0.185,3.709,0.185,3.709s1.484,1.792,1.484,3.616c0,1.823-0.155,6.49-6.397,7.046c0,0,0.834,1.082,0.834,2.411s0,4.08,0,4.08s0.035,0.466,0.803,0.702C23.939,25.488,28,20.221,28,14z"></path>
+                            </svg>
+                            <a class="underline" href="https://github.com/mshah972" target="_blank">GitHub</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990" id="linkedin">
+                                <path d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"></path>
+                            </svg>
+                            <a class="underline" href="https://www.linkedin.com/in/moksh-shah07" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right: form -->
+            <div class="lg:col-span-3">
+                <form id="contactForm"
+                      class="border border-black p-6"
+                      action="https://formspree.io/f/xwpqgega" method="POST">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-[12px] tracking-widest text-black font-light">NAME</label>
+                            <input id="name" name="name" type="text" required
+                                   class="mt-2 w-full text-[14px] rounded-[12px] border border-accent bg-white px-4 py-3 focus:ring-1 focus:ring-black/10 font-light uppercase"
+                                   placeholder="Moksh Shah">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-[12px] tracking-widest text-black font-light">EMAIL</label>
+                            <input id="email" name="email" type="email" required
+                                   class="mt-2 w-full text-[14px] rounded-[12px] border border-accent bg-white px-4 py-3 focus:ring-1 focus:ring-black/10 font-light uppercase"
+                                   placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <label for="subject" class="block text-[12px] tracking-widest text-black font-light">SUBJECT</label>
+                        <input id="subject" name="subject" type="text"
+                               class="mt-2 w-full text-[14px] rounded-[12px] border border-accent bg-white px-4 py-3 focus:ring-1 focus:ring-black/10 font-light uppercase"
+                               placeholder="Let’s build something great">
+                    </div>
+
+                    <div class="mt-4">
+                        <label for="message" class="block text-[12px] tracking-widest text-black font-light">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  class="mt-2 w-full text-[14px] rounded-[12px] border border-accent bg-white px-4 py-3 focus:ring-1 focus:ring-black/10 font-light uppercase"
+                                  placeholder="Tell me about your project, timeline, and goals…"></textarea>
+                    </div>
+
+                    <div class="mt-4 flex items-start gap-3">
+                        <input id="consent" name="consent" type="checkbox" required class="mt-1">
+                        <label for="consent" class="text-sm text-black font-light">You agree to be contacted about your inquiry.</label>
+                    </div>
+
+                    <div class="mt-6 flex items-center gap-4">
+                        <button type="submit"
+                                class="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-white hover:opacity-90 active:translate-y-[1px] transition">
+                            Send Message
+                        </button>
+                        <span id="formStatus" class="text-sm text-muted" role="status" aria-live="polite"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="px-6 lg:px-10 py-12 border-t border-black">
+    <div class="max-w-7xl mx-auto flex flex-row justify-start items-start font-light">
+        &copy; 2025. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
